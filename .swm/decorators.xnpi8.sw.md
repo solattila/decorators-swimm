@@ -17,9 +17,9 @@ A simple logger decorator.
 ```python
 1      def logger(function):
 2          def wrapper(*args, **kwargs):
-3              print(f"Function {function.__name__}() was called")
+3              print(f"Function {function.__name__} was called")
 4              result = function(*args, **kwargs)
-5              print(f"Function {function.__name__}() returned {result}")
+5              print(f"Function {function.__name__} returned with {result}")
 6              return result
 7          return wrapper
 ```
