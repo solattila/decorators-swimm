@@ -3,6 +3,7 @@ def logger(function):
         print(f"Function {function.__name__} was called")
         result = function(*args, **kwargs)
         print(f"Function {function.__name__} returned with {result}")
+        print("really cool")
         return result
     return wrapper
 
